@@ -1,4 +1,8 @@
 <div>
   <app-header />
-  <app-user-input />
+  <app-user-input (calculate)="displayResults()" />
+
+  @if(resultsDisplayed){
+  <app-investement-results />
+  }
 </div>
